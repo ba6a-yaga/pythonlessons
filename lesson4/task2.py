@@ -80,6 +80,9 @@ cProfile.run('findSimpleNumbers(100)')
 """
 
 def findByEratosphenv2(n):
+    if n == 1:
+        return 2
+
     ar = n*n
     a = list(range(ar + 1))
     a[1] = 0

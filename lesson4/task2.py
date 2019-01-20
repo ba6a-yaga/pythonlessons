@@ -18,6 +18,9 @@ def findByEratosphen(n):
     result = [v for v in sieve if v != 0]
     return result[n-1]
 
+
+print(findByEratosphen(100))
+
 # 100 loops, best of 3: 25.2 usec per loop - 10
 # 100 loops, best of 3: 101 usec per loop - 20
 # 100 loops, best of 3: 3.05 msec per loop - 100

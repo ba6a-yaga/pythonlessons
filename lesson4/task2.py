@@ -18,6 +18,9 @@ def findByEratosphen(n):
     result = [v for v in sieve if v != 0]
     return result[n-1]
 
+
+print(findByEratosphen(100))
+
 # 100 loops, best of 3: 25.2 usec per loop - 10
 # 100 loops, best of 3: 101 usec per loop - 20
 # 100 loops, best of 3: 3.05 msec per loop - 100
@@ -80,6 +83,9 @@ cProfile.run('findSimpleNumbers(100)')
 """
 
 def findByEratosphenv2(n):
+    if n == 1:
+        return 2
+
     ar = n*n
     a = list(range(ar + 1))
     a[1] = 0
